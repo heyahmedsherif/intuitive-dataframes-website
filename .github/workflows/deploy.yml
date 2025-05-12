@@ -28,6 +28,7 @@ jobs:
           cp -r static/* static_site/
           cp -r templates/* static_site/
           cp app.py static_site/
+          cp CNAME static_site/
           echo "Flask website" > static_site/index.html
 
       - name: Deploy
